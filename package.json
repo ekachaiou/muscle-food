@@ -1,0 +1,7 @@
+{
+  "name": "muscle-food",
+  "private": true,
+  "scripts": {
+    "build": "npm install --prefix muscle-food-app && npm run build --prefix muscle-food-app"
+  }
+}
