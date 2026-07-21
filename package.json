@@ -1,7 +1,14 @@
 {
   "name": "muscle-food",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "build": "npm install --prefix muscle-food-app && npm run build --prefix muscle-food-app"
+    "build": "npm install && npm install --prefix muscle-food-app && npm run build --prefix muscle-food-app",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
   }
 }
